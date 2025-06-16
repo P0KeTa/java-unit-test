@@ -2,13 +2,16 @@ package ru.yandex.praktikum;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
+
+import org.junit.experimental.runners.Enclosed;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 
+@RunWith(Enclosed.class)
 public class Taxk_3 {
 
     @RunWith(Parameterized.class)
-    public class CheckIsAdultTest {
+    public static class CheckIsAdultTest {
 
         private final int age;
         private final boolean result;
